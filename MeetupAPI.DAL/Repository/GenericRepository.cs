@@ -10,11 +10,11 @@ namespace Meetup.DAL.Repository
     public class GenericRepository<TEntity> : IGenericRepository<TEntity>
         where TEntity : class
     {
-        private readonly ApplicationContext _db;
+        private readonly ApplicationDbContext _db;
 
         protected readonly DbSet<TEntity> _dbSet;
 
-        public GenericRepository(ApplicationContext applicationContext)
+        public GenericRepository(ApplicationDbContext applicationContext)
         {
             _db = applicationContext;
             _dbSet = _db.Set<TEntity>();

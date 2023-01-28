@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meetup.API", "MeetupAPI\Meetup.API.csproj", "{FF9468F0-8340-43E4-ABED-5E4124102E88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meetup.API", "MeetupAPI\Meetup.API.csproj", "{FF9468F0-8340-43E4-ABED-5E4124102E88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meetup.DAL", "MeetupAPI.DAL\Meetup.DAL.csproj", "{A47A3C7F-F410-4425-8D0F-735659911261}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meetup.DAL", "MeetupAPI.DAL\Meetup.DAL.csproj", "{A47A3C7F-F410-4425-8D0F-735659911261}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meetup.BLL", "Meetup.BLL\Meetup.BLL.csproj", "{CA8F9484-452C-4A2B-A3B8-0B1B2A4FD6D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meetup.BLL", "Meetup.BLL\Meetup.BLL.csproj", "{CA8F9484-452C-4A2B-A3B8-0B1B2A4FD6D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meetup.DI", "Meetup.DI\Meetup.DI.csproj", "{FD391D90-B8D7-4386-822A-4F355875CF93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{CA8F9484-452C-4A2B-A3B8-0B1B2A4FD6D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA8F9484-452C-4A2B-A3B8-0B1B2A4FD6D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA8F9484-452C-4A2B-A3B8-0B1B2A4FD6D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD391D90-B8D7-4386-822A-4F355875CF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD391D90-B8D7-4386-822A-4F355875CF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD391D90-B8D7-4386-822A-4F355875CF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD391D90-B8D7-4386-822A-4F355875CF93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

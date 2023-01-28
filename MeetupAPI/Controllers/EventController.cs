@@ -2,8 +2,10 @@
 using Meetup.API.ViewModels.Event;
 using Meetup.BLL.Interfaces;
 using Meetup.BLL.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using OpenIddict.Validation.AspNetCore;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -12,6 +14,7 @@ namespace Meetup.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize(AuthenticationSchemes = OpenIddictValidationAspNetCoreDefaults.AuthenticationScheme)]
     public class EventController : ControllerBase
     {
         private readonly IEventService _eventService;

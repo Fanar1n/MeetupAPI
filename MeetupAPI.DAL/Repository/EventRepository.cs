@@ -6,7 +6,7 @@ namespace Meetup.DAL.Repository
 {
     public class EventRepository : GenericRepository<EventEntity>, IEventRepository
     {
-        public EventRepository(ApplicationContext applicationContext)
+        public EventRepository(ApplicationDbContext applicationContext)
             : base(applicationContext)
         {
         }

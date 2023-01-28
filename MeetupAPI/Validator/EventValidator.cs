@@ -8,13 +8,13 @@ namespace Meetup.API.Validator
     {
         public EventValidator()
         {
-            RuleFor(x => x.Name).Length(2, 50);
-            RuleFor(x => x.Description).Length(2, 100);
-            RuleFor(x => x.Plan).Length(2, 100);
-            RuleFor(x => x.DateTimeOfThe).Must(BeAValidateDate);
-            RuleFor(x => x.Place).Length(4, 50);
-            RuleFor(x => x.Organizer).Length(2, 50);
-            RuleFor(x => x.Speaker).Length(2, 50);
+            RuleFor(x => x.Name).Length(2, 50).NotNull();
+            RuleFor(x => x.Description).Length(2, 100).NotNull();
+            RuleFor(x => x.Plan).Length(2, 100).NotNull();
+            RuleFor(x => x.DateTimeOfThe).Must(BeAValidateDate).NotNull();
+            RuleFor(x => x.Place).Length(4, 50).NotNull();
+            RuleFor(x => x.Organizer).Length(2, 50).NotNull();
+            RuleFor(x => x.Speaker).Length(2, 50).NotNull();
         }
 
         private bool BeAValidateDate(DateTime date)
