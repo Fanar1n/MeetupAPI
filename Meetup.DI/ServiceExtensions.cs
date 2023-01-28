@@ -34,7 +34,7 @@ namespace Meetup.DI
                 options.SwaggerDoc("v1",
                     new OpenApiInfo
                     {
-                        Title = "Manufacturing API v1.0",
+                        Title = "MeetupAPI",
                         Version = "v1"
                     });
 
